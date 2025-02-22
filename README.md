@@ -44,7 +44,7 @@ Backend (Optional): AWS Lambda, API Gateway, DynamoDB (if needed for persistence
 
  🏗️ Installation & Setup
 
- git clone https://github.com/your-username/kanban-board.git
+ git clone :-   https://github.com/Its-me-ravi/kanban-board.git
 
  Install dependencies:
 
