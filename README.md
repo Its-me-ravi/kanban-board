@@ -1,5 +1,7 @@
 Kanban Board
 
+ Hosted on Vercel: https://kanban-board-taupe-two.vercel.app/
+
 📌 Project Overview
 
 This Kanban Board is a task management application built with React, Vite, and Tailwind CSS. It allows users to create, move, and manage tasks across different workflow stages in a visually appealing and user-friendly interface.
@@ -44,7 +46,7 @@ Backend (Optional): AWS Lambda, API Gateway, DynamoDB (if needed for persistence
 
  🏗️ Installation & Setup
 
- git clone https://github.com/your-username/kanban-board.git
+ git clone :-   https://github.com/Its-me-ravi/kanban-board.git
 
  Install dependencies:
 
