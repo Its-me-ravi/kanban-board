@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from "react";
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
-    document.body.className = darkMode ? "dark" : "";
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+    localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
 
   return (
-    <button onClick={() => setDarkMode(prev => !prev)}>
-      {darkMode ? "Light Mode" : "Dark Mode"}
-    </button>
+    <label className="toggle-switch">
+      <input
+        type="checkbox"
+        checked={darkMode}
+        onChange={() => setDarkMode((prev) => !prev)}
+      />
+      <span className="slider"></span>
+    </label>
   );
 };
 
